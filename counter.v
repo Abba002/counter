@@ -75,7 +75,7 @@ debouncer debounce_inc(.clk(clk), .button(btn_inc), .clean_button(clean_inc));
 debouncer debounce_rst(.clk(clk), .button(btn_rst), .clean_button(clean_rst));
 
 //counter logic
-counter count_mod(.clk(clk), .inc_button(clean_inc), .reset(clean_rst), .count(count));
+counter count_mod(.clk(clk), .inc_button(clean_inc), .reset_button(clean_rst), .count(count));
 
 //seven segment decoder
 seven_seg_decoder seg_dec(.digit(count), .seg(segs));

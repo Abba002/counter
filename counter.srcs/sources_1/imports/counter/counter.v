@@ -23,7 +23,7 @@ endmodule
 module counter(
     input clk,
     input inc_button,
-    input reset button,
+    input reset_button,
     output reg[3:0] count
 );
 always @(posedge clk) begin
@@ -31,7 +31,7 @@ always @(posedge clk) begin
         count=0;
     else if (inc_button) begin
         if (count==9)
-            count ==0; //wrap to 0 after 9
+            count =0; //wrap to 0 after 9
         else
             count = count+1;
     end
@@ -40,7 +40,7 @@ endmodule
 
 module seven_seg_decoder(
     input [3:0] digit,
-    output reg [6:0] segments 
+    output reg [6:0] seg 
 );
 always @(*) begin
     case(digit)
@@ -54,7 +54,7 @@ always @(*) begin
         4'b0111: seg = 7'b1000000;//7
         4'b1000: seg = 7'b1000000;//8
         4'b1001: seg = 7'b1000000;//9
-        default: seg = 7b'1111111;//off
+        default: seg = 7'b1111111;//off
     endcase
 end
 endmodule
@@ -75,10 +75,10 @@ debouncer debounce_inc(.clk(clk), .button(btn_inc), .clean_button(clean_inc));
 debouncer debounce_rst(.clk(clk), .button(btn_rst), .clean_button(clean_rst));
 
 //counter logic
-counter count_mod(.clk(clk) .inc_button(clean_inc), .reset(clean_rst), count(count));
+counter count_mod(.clk(clk), .inc_button(clean_inc), .reset(clean_rst), .count(count));
 
 //seven segment decoder
-seven_seg_decoder seg_dec(.digit(count), .segments(seg));
+seven_seg_decoder seg_dec(.digit(count), .seg(segs));
 
 //enable one display
 assign an = 4'b1110; 
