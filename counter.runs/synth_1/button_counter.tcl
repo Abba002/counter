@@ -72,6 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache C:/Users/ibuku/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-35216-Ibukun/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -103,6 +104,8 @@ read_xdc C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Ma
 set_property used_in_implementation false [get_files C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Abba/counter/counter.srcs/utils_1/imports/synth_1/button_counter.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
