@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1741992666" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/button_counter.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1741993378" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/button_counter.dcp">
   <File Type="PA-TCL" Name="button_counter.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="button_counter_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="button_counter_reports.tcl"/>
@@ -14,7 +14,7 @@
     <File Path="$PSRCDIR/sources_1/imports/counter/counter.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/counter.v"/>
-        <Attr Name="ImportTime" Val="1741987571"/>
+        <Attr Name="ImportTime" Val="1741993205"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
