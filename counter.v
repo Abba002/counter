@@ -54,7 +54,7 @@ always @(*) begin
         4'b0111: seg = 7'b1000000;//7
         4'b1000: seg = 7'b1000000;//8
         4'b1001: seg = 7'b1000000;//9
-        default: seg = 7b'1111111;//off
+        default: seg = 7'b1111111;//off
     endcase
 end
 endmodule
