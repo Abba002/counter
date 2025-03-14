@@ -31,7 +31,7 @@ always @(posedge clk) begin
         count=0;
     else if (inc_button) begin
         if (count==9)
-            count ==0; //wrap to 0 after 9
+            count =0; //wrap to 0 after 9
         else
             count = count+1;
     end
