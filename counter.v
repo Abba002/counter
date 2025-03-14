@@ -78,7 +78,7 @@ debouncer debounce_rst(.clk(clk), .button(btn_rst), .clean_button(clean_rst));
 counter count_mod(.clk(clk), .inc_button(clean_inc), .reset_button(clean_rst), .count(count));
 
 //seven segment decoder
-seven_seg_decoder seg_dec(.digit(count), .seg(seg));
+seven_seg_decoder seg_dec(.digit(count), .segment(seg));
 
 //enable one display
 assign an = 4'b1110; 
