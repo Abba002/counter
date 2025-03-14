@@ -40,7 +40,7 @@ endmodule
 
 module seven_seg_decoder(
     input [3:0] digit,
-    output reg [6:0] seg 
+    output reg [6:0] segments 
 );
 always @(*) begin
     case(digit)
@@ -57,4 +57,30 @@ always @(*) begin
         default: seg = 7b'1111111;//off
     endcase
 end
+endmodule
+
+module button_counter(
+    input clk,
+    input btn_inc,//inclement button
+    input btn_rst, // reset button
+    output [6:0] seg, // 7 seg display 
+    output [3:0] an // anode selector
+
+);
+wire clean_inc, clean_rst;
+wire[3:0] count;
+
+//debounce both buttons
+debouncer debounce_inc(.clk(clk), .button(btn_inc), .clean_button(clean_inc));
+debouncer debounce_rst(.clk(clk), .button(btn_rst), .clean_button(clean_rst));
+
+//counter logic
+counter count_mod(.clk(clk) .inc_button(clean_inc), .reset(clean_rst), count(count));
+
+//seven segment decoder
+seven_seg_decoder seg_dec(.digit(count), .segments(seg));
+
+//enable one display
+assign an = 4'b1110; 
+
 endmodule
