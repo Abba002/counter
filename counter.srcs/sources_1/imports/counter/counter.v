@@ -23,7 +23,7 @@ endmodule
 module counter(
     input clk,
     input inc_button,
-    input reset_button,
+    input reset button,
     output reg[3:0] count
 );
 always @(posedge clk) begin
