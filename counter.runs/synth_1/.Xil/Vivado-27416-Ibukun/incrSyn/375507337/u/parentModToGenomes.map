@@ -1,0 +1,13 @@
+muxpart__1: 
+datapath: 
+datapath__1: 
+logic: 
+case: 
+reg: 
+counter: 
+button_counter: 
+reg__1: 
+debouncer: 
+counter__1: 
+seven_seg_decoder: 
+muxpart: 

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc rfile:../../../counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Abba/counter/Nexys-A7-100T-Master.xdc rfile:../../../Nexys-A7-100T-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:60 export:INPUT save:INPUT read:READ} [current_design]
@@ -27,5 +27,3 @@ set_property src_info {type:XDC file:1 line:84 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { btn_inc }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property src_info {type:XDC file:1 line:86 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { btn_rst }]; #IO_L12P_T1_MRCC_14 Sch=btnl
-set_property src_info {type:XDC file:1 line:254 export:INPUT save:INPUT read:READ} [current_design]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF];

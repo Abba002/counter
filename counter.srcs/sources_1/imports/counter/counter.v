@@ -3,7 +3,7 @@ module debouncer(
     input button,
     output reg clean_button
 );
-reg [21:0] count =0;
+reg [19:0] count =0;
 reg button_state =0;
 
 always @(posedge clk) begin
@@ -11,7 +11,7 @@ always @(posedge clk) begin
         count<= 0;
     else begin
         count <= count+1;
-        if (count==2500000) begin 
+        if (count==1000000) begin 
             button_state <= button;
             clean_button <= button;
         end
@@ -68,14 +68,9 @@ module button_counter(
 
 );
 
-wire clk_buf;
 wire clean_inc, clean_rst;
 wire [3:0] count;
 
-BUFG bufg_inst(
-    .I(clk),
-    .O(clk_buf)
-);
 
 //debounce both buttons
 debouncer debounce_inc(.clk(clk), .button(btn_inc), .clean_button(clean_inc));
