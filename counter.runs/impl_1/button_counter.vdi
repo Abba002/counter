@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar 14 20:28:51 2025
+# Process ID: 43996
+# Current directory: C:/Abba/counter/counter.runs/impl_1
+# Command line: vivado.exe -log button_counter.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source button_counter.tcl -notrace
+# Log file: C:/Abba/counter/counter.runs/impl_1/button_counter.vdi
+# Journal file: C:/Abba/counter/counter.runs/impl_1\vivado.jou
+# Running On: Ibukun, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 12, Host memory: 7851 MB
+#-----------------------------------------------------------
+source button_counter.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 464.074 ; gain = 184.039
+Command: link_design -top button_counter -part xc7k70tfbv676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T10' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:60]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R10' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K13' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:63]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P15' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:64]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T11' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:65]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J17' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:70]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T9' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:72]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P17' is not a valid site or package pin name. [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc:86]
+Finished Parsing XDC File [C:/Abba/counter/counter.srcs/constrs_1/imports/counter/Nexys-A7-100T-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 980.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 9 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 984.344 ; gain = 520.270
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1004.324 ; gain = 19.980
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.602 ; gain = 543.277
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 1 Initialization | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Retarget | Checksum: 183c15b82
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 183c15b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Constant propagation | Checksum: 183c15b82
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 17d4d4efc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Sweep | Checksum: 17d4d4efc
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 17d4d4efc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1914.246 ; gain = 0.000
+BUFG optimization | Checksum: 17d4d4efc
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 17d4d4efc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Shift Register Optimization | Checksum: 17d4d4efc
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 17d4d4efc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Post Processing Netlist | Checksum: 17d4d4efc
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 9 Finalization | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1914.246 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 195af670f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 0 Warnings, 9 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1914.246 ; gain = 929.902
+INFO: [runtcl-4] Executing : report_drc -file button_counter_drc_opted.rpt -pb button_counter_drc_opted.pb -rpx button_counter_drc_opted.rpx
+Command: report_drc -file button_counter_drc_opted.rpt -pb button_counter_drc_opted.pb -rpx button_counter_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Abba/counter/counter.runs/impl_1/button_counter_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1914.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Abba/counter/counter.runs/impl_1/button_counter_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: a6a2d952
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.246 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus an are not locked:  'an[2]'  'an[0]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus seg are not locked:  'seg[5]'  'seg[4]'  'seg[3]'  'seg[1]'  'seg[0]' 
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF] >
+
+	Clock Rule: rule_gclkio_bufg
+	Status: FAILED
+	Rule Description: An IOB driving a BUFG must use a CCIO in the same half side (top/bottom) of chip as the BUFG
+
+	clk_IBUF_inst (IBUF.O) is locked to IPAD_X0Y36
+	clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y31
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 869a6070
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 1914.246 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 869a6070
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 1914.246 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 869a6070
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1914.246 ; gain = 0.000
+43 Infos, 2 Warnings, 9 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 20:29:27 2025...
