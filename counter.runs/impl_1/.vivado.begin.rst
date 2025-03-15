@@ -1,60 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="36296" HostCore="12" HostMemory="07851732992">
+    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="42104" HostCore="12" HostMemory="07851732992">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="40392" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="27708" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="39808" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="27068" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="33740" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="39092" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="42416" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="42672" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="34060" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="39000" HostCore="12" HostMemory="07851732992">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="42472" HostCore="12" HostMemory="07851732992">
+    <Process Command="vivado.bat" Owner="ibuku" Host="IBUKUN" Pid="28464" HostCore="12" HostMemory="07851732992">
     </Process>
 </ProcessHandle>

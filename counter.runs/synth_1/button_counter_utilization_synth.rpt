@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Mar 14 20:28:30 2025
+| Date         : Fri Mar 14 21:13:52 2025
 | Host         : Ibukun running 64-bit major release  (build 9200)
 | Command      : report_utilization -file button_counter_utilization_synth.rpt -pb button_counter_utilization_synth.pb
 | Design       : button_counter
@@ -34,8 +34,8 @@ Table of Contents
 | Slice LUTs*             |   20 |     0 |          0 |     41000 |  0.05 |
 |   LUT as Logic          |   20 |     0 |          0 |     41000 |  0.05 |
 |   LUT as Memory         |    0 |     0 |          0 |     13400 |  0.00 |
-| Slice Registers         |   46 |     0 |          0 |     82000 |  0.06 |
-|   Register as Flip Flop |   46 |     0 |          0 |     82000 |  0.06 |
+| Slice Registers         |   50 |     0 |          0 |     82000 |  0.06 |
+|   Register as Flip Flop |   50 |     0 |          0 |     82000 |  0.06 |
 |   Register as Latch     |    0 |     0 |          0 |     82000 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     20500 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     10250 |  0.00 |
@@ -59,7 +59,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 46    |          Yes |       Reset |            - |
+| 50    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,14 +153,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   46 |        Flop & Latch |
+| FDRE     |   50 |        Flop & Latch |
+| CARRY4   |   12 |          CarryLogic |
 | OBUF     |   11 |                  IO |
-| CARRY4   |   10 |          CarryLogic |
-| LUT4     |    9 |                 LUT |
+| LUT4     |   11 |                 LUT |
 | LUT6     |    8 |                 LUT |
-| LUT2     |    4 |                 LUT |
 | LUT1     |    3 |                 LUT |
 | IBUF     |    3 |                  IO |
+| LUT2     |    2 |                 LUT |
 | LUT3     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
