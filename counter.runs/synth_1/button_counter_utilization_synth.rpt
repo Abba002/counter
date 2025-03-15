@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Mar 14 21:13:52 2025
+| Date         : Fri Mar 14 21:40:55 2025
 | Host         : Ibukun running 64-bit major release  (build 9200)
 | Command      : report_utilization -file button_counter_utilization_synth.rpt -pb button_counter_utilization_synth.pb
 | Design       : button_counter
@@ -119,7 +119,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |          0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |          0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         6 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         6 |  0.00 |
@@ -161,8 +161,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT1     |    3 |                 LUT |
 | IBUF     |    3 |                  IO |
 | LUT2     |    2 |                 LUT |
+| BUFG     |    2 |               Clock |
 | LUT3     |    1 |                 LUT |
-| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 

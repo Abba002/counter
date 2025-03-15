@@ -40,21 +40,21 @@ endmodule
 
 module seven_seg_decoder(
     input [3:0] digit,
-    output reg [6:0] segments 
+    output reg [6:0] seg 
 );
 always @(*) begin
     case(digit)
-        4'b0000: segments = 7'b1000000; //0
-        4'b0001: segments = 7'b1111001;//1
-        4'b0010: segments = 7'b0100100;//2
-        4'b0011: segments = 7'b0110000;//3
-        4'b0100: segments = 7'b0011001;//4
-        4'b0101: segments = 7'b0010010;//5
-        4'b0110: segments = 7'b0000010;//6
-        4'b0111: segments = 7'b1111000;//7
-        4'b1000: segments = 7'b0000000;//8
-        4'b1001: segments = 7'b0010000;//9
-        default: segments = 7'b1111111;//off
+        4'b0000: seg = 7'b1000000; //0
+        4'b0001: seg = 7'b1111001;//1
+        4'b0010: seg = 7'b0100100;//2
+        4'b0011: seg = 7'b0110000;//3
+        4'b0100: seg = 7'b0011001;//4
+        4'b0101: seg = 7'b0010010;//5
+        4'b0110: seg = 7'b0000010;//6
+        4'b0111: seg = 7'b1111000;//7
+        4'b1000: seg = 7'b0000000;//8
+        4'b1001: seg = 7'b0010000;//9
+        default: seg = 7'b1111111;//off
     endcase
 end
 endmodule
@@ -68,8 +68,14 @@ module button_counter(
 
 );
 
+wire clk_buf;
 wire clean_inc, clean_rst;
 wire [3:0] count;
+
+BUFG bufg_inst(
+    .I(clk),
+    .O(clk_buf)
+);
 
 //debounce both buttons
 debouncer debounce_inc(.clk(clk), .button(btn_inc), .clean_button(clean_inc));
@@ -79,7 +85,7 @@ debouncer debounce_rst(.clk(clk), .button(btn_rst), .clean_button(clean_rst));
 counter count_mod(.clk(clk), .inc_button(clean_inc), .reset_button(clean_rst), .count(count));
 
 //seven seg decoder
-seven_seg_decoder seg_dec(.digit(count), .segments(seg));
+seven_seg_decoder seg_dec(.digit(count), .seg(seg));
 
 //enable one display
 assign an = 4'b1110; 

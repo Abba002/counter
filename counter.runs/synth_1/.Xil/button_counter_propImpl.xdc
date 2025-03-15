@@ -27,3 +27,5 @@ set_property src_info {type:XDC file:1 line:84 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { btn_inc }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property src_info {type:XDC file:1 line:86 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { btn_rst }]; #IO_L12P_T1_MRCC_14 Sch=btnl
+set_property src_info {type:XDC file:1 line:254 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF];
