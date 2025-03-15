@@ -3,18 +3,20 @@ module debouncer(
     input button,
     output reg clean_button
 );
-reg [19:0] count =0;
+reg [21:0] count =0;
 reg button_state =0;
+reg last_state =0;
 
 always @(posedge clk) begin
     if(button == button_state)
         count<= 0;
     else begin
         count <= count+1;
-        if (count==1000000) begin 
+        if (count==2500000) begin 
             button_state <= button;
-            clean_button <= button;
         end
+        clean_button <= button_state && ~last_state;
+        last_state <= button_state;
     end
 end
 endmodule
@@ -83,6 +85,6 @@ counter count_mod(.clk(clk), .inc_button(clean_inc), .reset_button(clean_rst), .
 seven_seg_decoder seg_dec(.digit(count), .seg(seg));
 
 //enable one display
-assign an = 4'b1110; 
+assign an = 8'b11111110; 
 
 endmodule
